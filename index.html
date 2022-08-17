@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <title>Reservas Roots Valle</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="logos/favicon.ico" type="image/x-icon">
+    <!-- <script src="https://unpkg.com/jspdf@latest/dist/jspdf.umd.min.js"></script> -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+
+</head>
+
+<body>
+    <header>
+        <figure class="figura" id="logohead">
+            <img src="logos/logoRoots.png" alt="" class="logo">
+        </figure>
+    </header>
+
+    <article class="hidebx" id="mainconfimacion">
+        <figure class="seccion_confirmacion">
+
+            <img src="assets/confirmacion.jpeg" alt="" class="img_confirmacion">
+        </figure>
+    </article>
+    <main class="" id="mainpage">
+
+
+        <!-- <a href="confirmacion.html">confirmacion</a> -->
+
+
+        <h1>la mejor discoteca del valle Roots valle</h1>
+        <section class="carrusel image-styled" id="fadingImage">
+            <!-- <img id="foto1" class="fotos " src="images/personas_bailando_safaera.jpg" alt="personas bailando en discoteca safaera"> -->
+
+        </section>
+
+        <section class="descripcion parallax">
+            <p>Realiza tu reserva en el siguiente formulario
+                <br>
+                <b>Consumo mínimo 15usd</b> 
+            </p>
+        </section>
+
+
+
+
+
+
+
+        <!-- *************** RESERVAS  ***************** -->
+        <section class="reservas">
+
+            <!-- <form class="form" name="reserva" method="post" data-netlify="true"> -->
+            <!-- <form class="form" action="https://formspree.io/f/mqknopbg" method="POST"> -->
+            <form class="form" name="Reservas">
+                <div class="title">Reserva</div>
+
+                <div class="input-container ic1">
+                    <input id="firstname" class="input" type="text" placeholder=" " name="Nombre" required minlength="5""/>
+                    <div class="cut"></div>
+                    <label for="firstname" class="placeholder">Nombre</label>
+                </div>
+
+
+
+
+                <div class="input-container ic2">
+                    <input id="cedula" class="input" type="tel" placeholder=" " name="Cedula" required pattern="[0-9]{10}"/>
+                    <div class="cut"></div>
+                    <label for="cedula" class="placeholder">Cédula</label>
+                </div>
+
+
+
+                <div class="section_cumple">
+                    <h4>¿Hay algún cumpleañero?</h4>
+                    <input type="checkbox" id="cumple" class="hidebx" name="Cumple" />
+                    <label for="cumple" class="lbl-check">
+                        <div class="display-box">
+                            <span class="tiempo">SI</span>
+                        </div>
+                    </label>
+                </div>
+
+
+
+                <div class="input-container ic2">
+                    <input id="celular" class="input" type="tel" placeholder=" " name="Celular" required pattern="[0-9]{10}"/>
+                    <div class="cut cut-short"></div>
+                    <label for="celular" class="placeholder">Celular</label>
+                </div>
+
+                <div class="input-container ic2">
+                    <input id="personas" class="input" type="number" placeholder=" " name="Personas" required
+                        value="2" />
+                    <div class="cut cut-short"></div>
+                    <label for="personas" class="placeholder">¿Cuántas personas vienen?</label>
+                </div>
+
+                <!-- ****** FECHA  *********** -->
+                <div class="input-container ic2">
+                    <input id="fecha" class="input" type="date" placeholder=" " name="Fecha" required />
+                    <div class="cut cut-short"></div>
+                    <label for="fecha" class="placeholder">Agenda</label>
+                </div>
+
+                <!-- ************************* -->
+                <!-- ****** HORAS  *********** -->
+
+
+
+                <h4>Hora</h4>
+                <div class="container">
+
+
+                    <!-- 7:00 -->
+                    <!-- <input type="radio" name="hora" id="hora1" class="hidebx" value="7:00" checked />
+                    <label for="hora1" class="lbl-radio">
+                        <div class="display-box">
+                            <span class="tiempo">19:00</span>
+                        </div>
+                    </label> -->
+
+                    <!-- 7:30 -->
+                    <!-- <input type="radio" name="hora" id="hora2" class="hidebx" value="7:30" />
+                    <label for="hora2" class="lbl-radio">
+                        <div class="display-box">
+                            <span class="tiempo">19:30</span>
+                        </div>
+                    </label> -->
+
+                    <!-- 8:00 -->
+                    <!-- <input type="radio" name="hora" id="hora3" class="hidebx" value="8:00" />
+                    <label for="hora3" class="lbl-radio">
+                        <div class="display-box">
+                            <span class="tiempo">20:00</span>
+                        </div>
+                    </label> -->
+
+                    <!-- 8:30 -->
+                    <input type="radio" name="hora" id="hora4" class="hidebx" value="8:30" checked />
+                    <label for="hora4" class="lbl-radio">
+                        <div class="display-box">
+                            <span class="tiempo">20:30</span>
+                        </div>
+                    </label>
+
+
+                    <!-- 9:00 -->
+                    <input type="radio" name="hora" id="hora5" class="hidebx" value="9:00" />
+                    <label for="hora5" class="lbl-radio">
+                        <div class="display-box">
+                            <span class="tiempo">21:00</span>
+                        </div>
+                    </label>
+
+
+                    <!-- 9:30 -->
+                    <input type="radio" name="hora" id="hora6" class="hidebx" value="9:30" />
+                    <label for="hora6" class="lbl-radio">
+                        <div class="display-box">
+                            <span class="tiempo">21:30</span>
+                        </div>
+                    </label>
+
+                    <!-- 10:00 -->
+                    <input type="radio" name="hora" id="hora7" class="hidebx" value="10:00" />
+                    <label for="hora7" class="lbl-radio">
+                        <div class="display-box">
+                            <span class="tiempo">22:00</span>
+                        </div>
+                    </label>
+
+                    <!-- 10:30 -->
+                    <input type="radio" name="hora" id="hora8" class="hidebx" value="10:30" />
+                    <label for="hora8" class="lbl-radio">
+                        <div class="display-box">
+                            <span class="tiempo">22:30</span>
+                        </div>
+                    </label>
+
+                    <!-- 11:00 -->
+                    <input type="radio" name="hora" id="hora9" class="hidebx" value="11:00" />
+                    <label for="hora9" class="lbl-radio">
+                        <div class="display-box">
+                            <span class="tiempo">23:00</span>
+                        </div>
+                    </label>
+
+                    <!-- 11:30 -->
+                    <input type="radio" name="hora" id="hora10" class="hidebx" value="11:30" />
+                    <label for="hora10" class="lbl-radio">
+                        <div class="display-box">
+                            <span class="tiempo">23:30</span>
+                        </div>
+                    </label>
+
+
+
+
+                </div>
+
+
+
+                <!-- *************************** -->
+
+                <div class="input-container ic1">
+                    <!-- <textarea name="Observaciones" id="coments" cols="30" rows="4" class="input"></textarea> -->
+                    <input id="coments" class="input" type="text" placeholder=" " name="Observaciones"/>
+                    <div class="cut"></div>
+                    <label for="coments" class="placeholder">Observaciones adicionales
+
+                    </label>
+                </div>
+
+                <button type="submit" class="submit" id="btn_enviar">Reservar</button>
+
+
+            </form>
+
+
+        </section>
+        <!-- *********************************************** -->
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"
+            integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous">
+            </script>
+        <script src="./assets/js/imgData.js">
+        </script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            const weekday = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"];
+            const getDay = (dateString) => {
+                const date = new Date(dateString);
+                day = weekday[date.getDay()];
+                return day
+            }
+            const getDateCurrent = () => {
+                let date = new Date().toJSON().slice(0, 10)
+                return date
+            }
+            const getDateAvailable = (dateString = "") => {
+                if (dateString) {
+                    /* Lo que es ubicar la fecha a la mas reciente y no antes, pues no hay eventos apartar en el pasado */
+                    let date = new Date(dateString)
+                    if (date.getTime() > new Date().getTime())
+                        dateString = date.toJSON().slice(0, 10)
+                    else
+                        dateString = new Date().toJSON().slice(0, 10)
+                } else {
+                    let date = new Date()
+                    dateString = date.toJSON().slice(0, 10)
+                }
+                let date = dateString ? new Date(dateString) : new Date();
+                let day = date.getDay();
+                let addDays = 0
+                switch (+day) {
+                    case 6: /* 'Domingo' */
+                        addDays = 4
+                        break;
+                    case 0: /* 'Lunes' */
+                        addDays = 3
+                        break;
+                    case 1: /* 'Martes' */
+                        addDays = 2
+                        break;
+                    case 2: /* 'Miercoles' */
+                        addDays = 1
+                        break;
+                    default:
+                        break;
+                }
+                date.setDate(date.getDate() + addDays)
+                return date.toJSON().slice(0, 10)
+            }
+            const newForm = (name) => {
+                let form = document.createElement('form')
+                form.name = name
+                return form
+            }
+            const newInput = (name, value) => {
+                const input = document.createElement('input')
+                input.name = name
+                input.value = value
+                return input
+            }
+            const appendForm = (formSend, props) => {
+                console.log('Agregar a ');
+                Object.keys(props).forEach(prop => {
+                    const input = props[prop]
+                    console.log({ n: prop, v: input.value });
+                    formSend.append(newInput(prop, input.value))
+                })
+                return formSend
+            }
+
+
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbznmfNMuCDQ-ZeMcDEh9BSdHe6xpIIqvO9Px7I7eeuU4KK8uT_eYcIODbal9j6O37-o/exec'
+            const form = document.forms['Reservas']
+            form.Fecha.value = getDateAvailable()
+
+            form.Fecha.addEventListener('change', (e) => {
+                if (e.target == form.Cumple) {
+
+                } else if (e.target == form.Fecha) {
+                    switch (getDay(form.Fecha.value)) {
+                        case 'Jueves':
+                        case 'Viernes':
+                        case 'Sabado':
+                            break;
+                        default:
+                            form.fecha.value = getDateAvailable(form.fecha.value)
+                            alert('Solo dias Jueves, Viernes y Sabado ')
+                            return;
+                    }
+                }
+            })
+            let formSend
+            form.addEventListener('submit', e => {
+                e.preventDefault()
+                formSend = appendForm(
+                    newForm(name = "Reservas"),
+                    {
+
+                        Nombre: form.Nombre,
+                        Cedula: form.Cedula,
+                        Cumple: newInput('Cumple', 'NO'),
+                        Celular: form.Celular,
+                        Personas: form.Personas,
+                        Dia: newInput('Dia', getDay(form.Fecha.value)),
+                        Fecha: form.Fecha,
+                        hora: form.hora,
+                        Observaciones: form.Observaciones
+                    }
+                )
+
+                form.btn_enviar.disabled = true
+                form.btn_enviar.innerHTML = 'Un momento por favor..'
+
+                formSend.Cumple.value = form.Cumple.checked ? 'SI' : 'NO'
+
+                console.log(formSend);
+                fetch(scriptURL, { method: 'POST', body: new FormData(formSend) })
+                    .then(response => {
+
+                        console.log('Success!', response)
+
+                        form.btn_enviar.innerHTML = 'Gracias'
+                        form.btn_enviar.classList.toggle('hidebx')
+                        setTimeout(() => {
+                            // alert('listo')
+                            // window.location.href = "./confirmacion.html";
+                            const header = document.getElementById('logohead')
+                            const pagea = document.getElementById('mainpage')
+                            // const pageb = document.getElementById('mainconfimacion')
+                            // header.classList.toggle('hidebx')
+                            // pageb.classList.toggle('hidebx')
+                            // pagea.classList.toggle('hidebx')
+                            generarTicket()
+
+                        }, 500)
+
+                    })
+
+            })
+            let imgData = ''
+
+            function generarTicket() {
+                var doc = new jsPDF({
+                    // orientation: 'landscape',
+                    format: [500, 340]
+                })
+                let { Nombre, Cedula, Cumple, Celular, Personas, Dia, Fecha, hora } = formSend
+                let y = 30
+                doc.setDrawColor('#ffffff')
+                doc.setFillColor('#ffffff')
+                doc.rect(0, 0, 100, 340, 'F')
+                // doc.setDrawColor('#15172b')
+                // doc.setFillColor('#15172b')
+                doc.rect(0, 0, 100, 30, 'F')
+
+
+                doc.setTextColor('#112244')
+                doc.setFillColor('#112244')
+                doc.setDrawColor('#112244')
+
+                doc.text("Confirmación de reserva", 5, y += 9)
+                // 'S' [default] - stroke, 'F' - fill, and 'DF' (or 'FD') -
+                Object.keys(formSend).forEach(i => {
+                    const info = formSend[i]
+                    if (info.name == 'Cumple') return;
+                    doc.text(`${info.name}:`, 5, y += 9)
+                    doc.text(`${info.value}`, 50, y)
+                    doc.line(3, y + 2, 100, y + 2, [1, 1], 'DF')
+                })
+                doc.addImage(imgDataLogo, 'JPEG', 0, 0, 80, 50)
+
+                doc.setTextColor('#000')
+                doc.setFontSize(12)
+                doc.text(`- Estricto derecho de admisión `, 8, y + 9)
+                doc.text(`- Dress Code: Semi formal `, 8, y + 15)
+                doc.text(`  Prohibido prendas deporivas `, 8, y + 21)
+                doc.text(`  (camisetas, sudaderas, gorras, etc.) `, 8, y + 27)
+                doc.text(`- Open Door 20h30 `, 8, y + 33)
+                doc.text(`- Aforo limitado `, 8, y + 39)
+                doc.text(`- Cumplir con la hora de llegada definida`, 8, y + 45)
+                doc.text(`  en la reserva (+/- 15min`, 8, y + 51)
+                doc.text(`- Presentación ID(Cédula, Licencia`, 8, y + 57)
+                doc.text(`  de conducir o pasaporte`, 8, y + 63)
+                doc.text(`- +Carnet de vacunación`, 8, y + 69)
+                doc.save('ticket.pdf')
+                // window.location.href = "./confirmacion.html";
+
+
+            }
+            function fillInfo() {
+                form.Nombre.value = "Test"
+                form.Cedula.value = 1724258056
+                form.Cumple.checked = true
+                form.Celular.value = 0961777009
+                form.Personas.value = 2
+                form.hora.value = "11:00"
+            }
+            // fillInfo()
+        </script>
+
+        <section class="redes">
+            <a href="https://www.instagram.com/rootsvalle/"><i class='bx bxl-instagram'></i></a>
+            <!-- <a href="tel:0987452534"><i class='bx bx-phone-call'></i></a> -->
+        </section>
+        <footer>
+            <!-- &copy; <a href="https://github.com/RicardoCordovilla/RickiDev">Ricardo Cordovilla </a> -->
+            <!-- &copy; <a href="https://github.com/hzvvictor">Victor Vargas </a> -->
+        </footer>
+    </main>
+    </main>
+    <script src="assets/js/transiciones.js"></script>
+</body>
+
+</html>
+
+<!-- https://script.google.com/macros/s/AKfycbznmfNMuCDQ-ZeMcDEh9BSdHe6xpIIqvO9Px7I7eeuU4KK8uT_eYcIODbal9j6O37-o/exec -->
