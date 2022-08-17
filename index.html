@@ -47,7 +47,7 @@
         <section class="descripcion parallax">
             <p>Realiza tu reserva en el siguiente formulario
                 <br>
-                <b>Consumo mínimo 15usd</b> 
+                <b>Consumo mínimo 10usd</b> 
             </p>
         </section>
 
@@ -65,10 +65,17 @@
             <form class="form" name="Reservas">
                 <div class="title">Reserva</div>
 
+                <!--    | Nombre | -->
                 <div class="input-container ic1">
                     <input id="firstname" class="input" type="text" placeholder=" " name="Nombre" required minlength="5""/>
                     <div class="cut"></div>
                     <label for="firstname" class="placeholder">Nombre</label>
+                </div>
+                <!-- Apellido -->
+                <div class="input-container ic1">
+                    <input id="lastname" class="input" type="text" placeholder=" " name="Apellido" required minlength="5""/>
+                    <div class="cut"></div>
+                    <label for="lastname" class="placeholder">Apellido</label>
                 </div>
 
 
@@ -102,9 +109,9 @@
 
                 <div class="input-container ic2">
                     <input id="personas" class="input" type="number" placeholder=" " name="Personas" required
-                        value="2" />
+                        />
                     <div class="cut cut-short"></div>
-                    <label for="personas" class="placeholder">¿Cuántas personas vienen?</label>
+                    <label for="personas" class="placeholder">Personas</label>
                 </div>
 
                 <!-- ****** FECHA  *********** -->
@@ -119,89 +126,89 @@
 
 
 
-                <h4>Hora</h4>
+                <h4>Hora de llegada aproximada</h4>
                 <div class="container">
 
 
-                    <!-- 7:00 -->
-                    <!-- <input type="radio" name="hora" id="hora1" class="hidebx" value="7:00" checked />
+                    <!-- 4:00 -->
+                    <input type="radio" name="hora" id="hora1" class="hidebx" value="4:00" checked />
                     <label for="hora1" class="lbl-radio">
                         <div class="display-box">
-                            <span class="tiempo">19:00</span>
+                            <span class="tiempo">4:00</span>
                         </div>
-                    </label> -->
+                    </label>
 
-                    <!-- 7:30 -->
-                    <!-- <input type="radio" name="hora" id="hora2" class="hidebx" value="7:30" />
+                    <!-- 4:30 -->
+                    <input type="radio" name="hora" id="hora2" class="hidebx" value="4:30" />
                     <label for="hora2" class="lbl-radio">
                         <div class="display-box">
-                            <span class="tiempo">19:30</span>
+                            <span class="tiempo">4:30</span>
                         </div>
-                    </label> -->
+                    </label>
 
-                    <!-- 8:00 -->
-                    <!-- <input type="radio" name="hora" id="hora3" class="hidebx" value="8:00" />
+                    <!-- 6:00 -->
+                    <input type="radio" name="hora" id="hora3" class="hidebx" value="6:00" />
                     <label for="hora3" class="lbl-radio">
                         <div class="display-box">
-                            <span class="tiempo">20:00</span>
+                            <span class="tiempo">6:00</span>
                         </div>
-                    </label> -->
+                    </label>
 
-                    <!-- 8:30 -->
-                    <input type="radio" name="hora" id="hora4" class="hidebx" value="8:30" checked />
+                    <!-- 6:30 -->
+                    <input type="radio" name="hora" id="hora4" class="hidebx" value="6:30"/>
                     <label for="hora4" class="lbl-radio">
                         <div class="display-box">
-                            <span class="tiempo">20:30</span>
+                            <span class="tiempo">6:30</span>
                         </div>
                     </label>
 
 
-                    <!-- 9:00 -->
-                    <input type="radio" name="hora" id="hora5" class="hidebx" value="9:00" />
+                    <!-- 7:00 -->
+                    <input type="radio" name="hora" id="hora5" class="hidebx" value="7:00" />
                     <label for="hora5" class="lbl-radio">
                         <div class="display-box">
-                            <span class="tiempo">21:00</span>
+                            <span class="tiempo">7:00</span>
                         </div>
                     </label>
 
 
-                    <!-- 9:30 -->
-                    <input type="radio" name="hora" id="hora6" class="hidebx" value="9:30" />
+                    <!-- 7:30 -->
+                    <input type="radio" name="hora" id="hora6" class="hidebx" value="7:30" />
                     <label for="hora6" class="lbl-radio">
                         <div class="display-box">
-                            <span class="tiempo">21:30</span>
+                            <span class="tiempo">7:30</span>
                         </div>
                     </label>
 
-                    <!-- 10:00 -->
-                    <input type="radio" name="hora" id="hora7" class="hidebx" value="10:00" />
+                    <!-- 8:00 -->
+                    <input type="radio" name="hora" id="hora7" class="hidebx" value="8:00" />
                     <label for="hora7" class="lbl-radio">
                         <div class="display-box">
-                            <span class="tiempo">22:00</span>
+                            <span class="tiempo">8:00</span>
                         </div>
                     </label>
 
-                    <!-- 10:30 -->
-                    <input type="radio" name="hora" id="hora8" class="hidebx" value="10:30" />
+                    <!-- 8:30 -->
+                    <input type="radio" name="hora" id="hora8" class="hidebx" value="8:30" />
                     <label for="hora8" class="lbl-radio">
                         <div class="display-box">
-                            <span class="tiempo">22:30</span>
+                            <span class="tiempo">8:30</span>
                         </div>
                     </label>
 
-                    <!-- 11:00 -->
-                    <input type="radio" name="hora" id="hora9" class="hidebx" value="11:00" />
+                    <!-- 9:00 -->
+                    <input type="radio" name="hora" id="hora9" class="hidebx" value="9:00" />
                     <label for="hora9" class="lbl-radio">
                         <div class="display-box">
-                            <span class="tiempo">23:00</span>
+                            <span class="tiempo">9:00</span>
                         </div>
                     </label>
 
-                    <!-- 11:30 -->
-                    <input type="radio" name="hora" id="hora10" class="hidebx" value="11:30" />
+                    <!-- 9:30 -->
+                    <input type="radio" name="hora" id="hora10" class="hidebx" value="9:30" />
                     <label for="hora10" class="lbl-radio">
                         <div class="display-box">
-                            <span class="tiempo">23:30</span>
+                            <span class="tiempo">9:30</span>
                         </div>
                     </label>
 
@@ -214,16 +221,16 @@
 
                 <!-- *************************** -->
 
-                <div class="input-container ic1">
-                    <!-- <textarea name="Observaciones" id="coments" cols="30" rows="4" class="input"></textarea> -->
-                    <input id="coments" class="input" type="text" placeholder=" " name="Observaciones"/>
-                    <div class="cut"></div>
-                    <label for="coments" class="placeholder">Observaciones adicionales
+                
+                <button type="submit" class="submit" id="btn_enviar">Reservar</button>
 
-                    </label>
+                <p>Si deseas más información o chatear con nosotros, lo puedes hacer dandole click aquí abajo</p>
+                <div class="ctaWts" >
+                    <i class='bx bxl-whatsapp'></i>
+                    <a href="https://wa.me/593983355880?text=Hola, deseo más información de las reservas">Chat de Whatsapp</a>
                 </div>
 
-                <button type="submit" class="submit" id="btn_enviar">Reservar</button>
+
 
 
             </form>
@@ -334,6 +341,7 @@
                     {
 
                         Nombre: form.Nombre,
+                        Apellido: form.Apellido,
                         Cedula: form.Cedula,
                         Cumple: newInput('Cumple', 'NO'),
                         Celular: form.Celular,
@@ -341,7 +349,7 @@
                         Dia: newInput('Dia', getDay(form.Fecha.value)),
                         Fecha: form.Fecha,
                         hora: form.hora,
-                        Observaciones: form.Observaciones
+                        // Observaciones: form.Observaciones
                     }
                 )
 
@@ -381,7 +389,7 @@
                     // orientation: 'landscape',
                     format: [500, 340]
                 })
-                let { Nombre, Cedula, Cumple, Celular, Personas, Dia, Fecha, hora } = formSend
+                let { Nombre,Apellido, Cedula, Cumple, Celular, Personas, Dia, Fecha, hora } = formSend
                 let y = 30
                 doc.setDrawColor('#ffffff')
                 doc.setFillColor('#ffffff')
@@ -404,21 +412,18 @@
                     doc.text(`${info.value}`, 50, y)
                     doc.line(3, y + 2, 100, y + 2, [1, 1], 'DF')
                 })
-                doc.addImage(imgDataLogo, 'JPEG', 0, 0, 80, 50)
+                doc.addImage(imgDataLogo, 'JPEG', 30, 0, 50, 30)
 
                 doc.setTextColor('#000')
                 doc.setFontSize(12)
                 doc.text(`- Estricto derecho de admisión `, 8, y + 9)
                 doc.text(`- Dress Code: Semi formal `, 8, y + 15)
-                doc.text(`  Prohibido prendas deporivas `, 8, y + 21)
-                doc.text(`  (camisetas, sudaderas, gorras, etc.) `, 8, y + 27)
-                doc.text(`- Open Door 20h30 `, 8, y + 33)
-                doc.text(`- Aforo limitado `, 8, y + 39)
-                doc.text(`- Cumplir con la hora de llegada definida`, 8, y + 45)
-                doc.text(`  en la reserva (+/- 15min`, 8, y + 51)
-                doc.text(`- Presentación ID(Cédula, Licencia`, 8, y + 57)
-                doc.text(`  de conducir o pasaporte`, 8, y + 63)
-                doc.text(`- +Carnet de vacunación`, 8, y + 69)
+                doc.text(`- Open Door 4pm `, 8, y + 21)
+                doc.text(`- Aforo limitado `, 8, y + 27)
+                doc.text(`- Cumplir con la hora de llegada definida`, 8, y + 33)
+                doc.text(`  en la reserva (+/- 30min`, 8, y + 39)
+                doc.text(`- Presentación de Cédula`, 8, y + 45)
+                doc.text(`- Consumo mínimo 10usd`, 8, y + 51)
                 doc.save('ticket.pdf')
                 // window.location.href = "./confirmacion.html";
 
