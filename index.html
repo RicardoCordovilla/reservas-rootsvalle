@@ -146,17 +146,33 @@
                         </div>
                     </label>
 
-                    <!-- 6:00 -->
-                    <input type="radio" name="hora" id="hora3" class="hidebx" value="6:00" />
+                    <!-- 5:00 -->
+                    <input type="radio" name="hora" id="hora3" class="hidebx" value="5:00" />
                     <label for="hora3" class="lbl-radio">
+                        <div class="display-box">
+                            <span class="tiempo">5:00</span>
+                        </div>
+                    </label>
+
+                    <!-- 5:30 -->
+                    <input type="radio" name="hora" id="hora4" class="hidebx" value="5:30" />
+                    <label for="hora4" class="lbl-radio">
+                        <div class="display-box">
+                            <span class="tiempo">5:30</span>
+                        </div>
+                    </label>
+
+                    <!-- 6:00 -->
+                    <input type="radio" name="hora" id="hora5" class="hidebx" value="6:00" />
+                    <label for="hora5" class="lbl-radio">
                         <div class="display-box">
                             <span class="tiempo">6:00</span>
                         </div>
                     </label>
 
                     <!-- 6:30 -->
-                    <input type="radio" name="hora" id="hora4" class="hidebx" value="6:30"/>
-                    <label for="hora4" class="lbl-radio">
+                    <input type="radio" name="hora" id="hora6" class="hidebx" value="6:30"/>
+                    <label for="hora6" class="lbl-radio">
                         <div class="display-box">
                             <span class="tiempo">6:30</span>
                         </div>
@@ -164,8 +180,8 @@
 
 
                     <!-- 7:00 -->
-                    <input type="radio" name="hora" id="hora5" class="hidebx" value="7:00" />
-                    <label for="hora5" class="lbl-radio">
+                    <input type="radio" name="hora" id="hora7" class="hidebx" value="7:00" />
+                    <label for="hora7" class="lbl-radio">
                         <div class="display-box">
                             <span class="tiempo">7:00</span>
                         </div>
@@ -173,42 +189,74 @@
 
 
                     <!-- 7:30 -->
-                    <input type="radio" name="hora" id="hora6" class="hidebx" value="7:30" />
-                    <label for="hora6" class="lbl-radio">
+                    <input type="radio" name="hora" id="hora8" class="hidebx" value="7:30" />
+                    <label for="hora8" class="lbl-radio">
                         <div class="display-box">
                             <span class="tiempo">7:30</span>
                         </div>
                     </label>
 
                     <!-- 8:00 -->
-                    <input type="radio" name="hora" id="hora7" class="hidebx" value="8:00" />
-                    <label for="hora7" class="lbl-radio">
+                    <input type="radio" name="hora" id="hora9" class="hidebx" value="8:00" />
+                    <label for="hora9" class="lbl-radio">
                         <div class="display-box">
                             <span class="tiempo">8:00</span>
                         </div>
                     </label>
 
                     <!-- 8:30 -->
-                    <input type="radio" name="hora" id="hora8" class="hidebx" value="8:30" />
-                    <label for="hora8" class="lbl-radio">
+                    <input type="radio" name="hora" id="hora10" class="hidebx" value="8:30" />
+                    <label for="hora10" class="lbl-radio">
                         <div class="display-box">
                             <span class="tiempo">8:30</span>
                         </div>
                     </label>
 
                     <!-- 9:00 -->
-                    <input type="radio" name="hora" id="hora9" class="hidebx" value="9:00" />
-                    <label for="hora9" class="lbl-radio">
+                    <input type="radio" name="hora" id="hora11" class="hidebx" value="9:00" />
+                    <label for="hora11" class="lbl-radio">
                         <div class="display-box">
                             <span class="tiempo">9:00</span>
                         </div>
                     </label>
 
                     <!-- 9:30 -->
-                    <input type="radio" name="hora" id="hora10" class="hidebx" value="9:30" />
-                    <label for="hora10" class="lbl-radio">
+                    <input type="radio" name="hora" id="hora12" class="hidebx" value="9:30" />
+                    <label for="hora12" class="lbl-radio">
                         <div class="display-box">
                             <span class="tiempo">9:30</span>
+                        </div>
+                    </label>
+
+                    <!-- 10:00 -->
+                    <input type="radio" name="hora" id="hora13" class="hidebx" value="10:00" />
+                    <label for="hora13" class="lbl-radio">
+                        <div class="display-box">
+                            <span class="tiempo">10:00</span>
+                        </div>
+                    </label>
+
+                    <!-- 10:30 -->
+                    <input type="radio" name="hora" id="hora14" class="hidebx" value="10:30" />
+                    <label for="hora14" class="lbl-radio">
+                        <div class="display-box">
+                            <span class="tiempo">10:30</span>
+                        </div>
+                    </label>
+
+                    <!-- 11:00 -->
+                    <input type="radio" name="hora" id="hora15" class="hidebx" value="11:00" />
+                    <label for="hora15" class="lbl-radio">
+                        <div class="display-box">
+                            <span class="tiempo">11:00</span>
+                        </div>
+                    </label>
+
+                    <!-- 11:30 -->
+                    <input type="radio" name="hora" id="hora16" class="hidebx" value="11:30" />
+                    <label for="hora16" class="lbl-radio">
+                        <div class="display-box">
+                            <span class="tiempo">11:30</span>
                         </div>
                     </label>
 
@@ -415,15 +463,16 @@
                 doc.addImage(imgDataLogo, 'JPEG', 30, 0, 50, 30)
 
                 doc.setTextColor('#000')
+                doc.setFontSize(16)
+                doc.text(` CONSUMO MINIMO 10 USD `, 8, y + 19)
                 doc.setFontSize(12)
-                doc.text(`- Estricto derecho de admisión `, 8, y + 9)
-                doc.text(`- Dress Code: Semi formal `, 8, y + 15)
-                doc.text(`- Open Door 4pm `, 8, y + 21)
-                doc.text(`- Aforo limitado `, 8, y + 27)
-                doc.text(`- Cumplir con la hora de llegada definida`, 8, y + 33)
-                doc.text(`  en la reserva (+/- 30min`, 8, y + 39)
-                doc.text(`- Presentación de Cédula`, 8, y + 45)
-                doc.text(`- Consumo mínimo 10usd`, 8, y + 51)
+                doc.text(`- Estricto derecho de admisión `, 8, y + 25)
+                doc.text(`- Dress Code: Semi formal `, 8, y + 31)
+                doc.text(`- Open Door 4pm `, 8, y + 37)
+                doc.text(`- Aforo limitado `, 8, y + 43)
+                doc.text(`- Cumplir con la hora de llegada definida`, 8, y + 49)
+                doc.text(`  en la reserva (+/- 30min`, 8, y + 55)
+                doc.text(`- Presentación de Cédula`, 8, y + 61)
                 doc.save('ticket.pdf')
                 // window.location.href = "./confirmacion.html";
 
